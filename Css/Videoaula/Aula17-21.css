@@ -1,0 +1,67 @@
+
+#pad{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	width: 1000px;
+	padding: 35px;
+	background: linear-gradient(to right, green, yellow);
+	color: darkblue;
+}
+
+#marg{
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: bolder;
+	margin: 60px;
+	background: radial-gradient(red, white);
+	color: hsl(100,68%,54%);
+}
+
+#flo{
+	background-color: darkblue;
+	width: 800px;
+	height: 800px;
+}
+.esq{
+	background-color: darkcyan;
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+.dir{
+	background-color: darkmagenta;
+	width: 400px;
+	height: 400px;
+	float: right;
+}
+
+#conteudo{
+	width: 800px;
+	height: 1500px;
+	background-color: darkseagreen;
+	position: relative;
+}
+
+#texto{
+	width: 600px;
+	background-color: darkturquoise;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#fixo{
+	background-color: red;
+	font-size: xx-large;
+	text-align:center;
+	width: 500px;
+	position: fixed;
+	top: 0;
+	left: 40%;
+	border-top:solid 10px;
+	outline: solid purple 15px;
+	transition: width 1s ease-in-out 0s, background-color 2s ease-in-out 1s;
+}
+
+#fixo:hover{
+	background-color: black;
+	width: 100%;
+}

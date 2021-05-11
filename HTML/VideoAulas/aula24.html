@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<title>Vigésima página</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Exercicios para desenvolvimento web 2021">
+		<meta name="keywords" content="Web, html, USP, Camelo">
+		<meta name="author" content="Leonardo Fonseca Pinheiro">
+    </head>
+
+    <body>
+		<h1>Formulários</h1>
+
+		<form action="cadastro.php" method="POST">
+		<fieldset>
+			<legend> Informações Pessoais</legend>
+			NOME: <br>
+			<input type="text" name="nome" required autofocus maxlength="50"> <br>
+
+			ANIMAL PREFERIDO: <br>
+			<input type="text" name="nome" value="Camelo" required disabled> <br>
+
+			SENHA: <br>
+			<input type="password" name="senha" required> <br>
+			
+			EMAIL: <br>
+			<input type="email" name="email" required autocomplete="on" placeholder="email@provedor.com"> <br>
+			
+			PAÍS: <br>
+			<input type="radio" name="pais" value="Brasil" checked> BRASIL
+			<input type="radio" name="pais" value="Outro"> OUTRO <br>
+			
+			TIME: <br>
+			<input type="checkbox" name="time" value="SP" checked> SÃO PAULO
+			<input type="checkbox" name="time" value="Cori"> CORINTHIANS
+			<input type="checkbox" name="time" value="Pal"> PALMEIRAS
+			<input type="checkbox" name="time" value="San"> SANTOS <br>
+			
+			IDADE: <br>
+			<input type="number" name="idade" min ="1" max="100" required> <br>
+				
+			QUANTIDADE: <br>
+			<input type="range" name="quantidade"> <br>
+					
+			COR: <br>
+			<input type="color" name="cor" required> <br>
+
+			IMAGEM: <br>
+			<input type="file" name="image"> <br>
+
+			<input type="hidden" name="id"> <br>
+
+			URL: <br>
+			<input type="url" name="site"> <br>
+
+			PESQUISA: <br>
+			<input type="search" name="PESQUISA"> <br>
+
+			TELEFONE: <br>
+			<input type="tel" name="telefone"> <br>
+		
+			DATA: <br>
+			<input type="date" name="data" min="2020-1-1" max="2021-12-31"> <br>
+
+			HORA: <br>
+			<input type="time" name="hora"> <br>
+		
+			MESANO: <br>
+			<input type="month" name="mesano"> <br>
+
+			SEMANA: <br>
+			<input type="week" name="semana"> <br>
+
+			DATORA: <br>
+			<input type="datetime-local" name="datora"> <br>
+				
+			MENSAGEM: <br>
+			<textarea name="mensagem" spellcheck="false"></textarea><br>
+			
+			<button type="button">CLICA AQUI</button> <br>
+			
+			QUAL CONSOLE?<br>
+			<select name="Console">
+				<optgroup label="Sony">
+					<option value="PS5">PS5</option>
+					<option value="PS4">PS4</option>
+				</optgroup>
+				<optgroup label="Microsoft">
+					<option value="Xone">Xbox One</option>
+					<option value="XSX">Xbox Series X</option>
+				</optgroup>
+			</select>
+			<br>
+			QUAL SUA REDE SOCIAL FAVORITA?
+			<input name="RS" list="redes">
+			<datalist id="redes" >
+				<option value="Twitter"></option>
+				<option value="Facebook"></option>
+				<option value="Instagram"></option>
+				<option value="Tiktok"></option>
+				<option value="Linkedin"></option>
+			</datalist> <br>
+			
+			<br>
+			<input type="submit" name="botão" value="ENVIAR"> <br>
+		</fieldset>
+
+		</form>
+    </body>
+</html>

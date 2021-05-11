@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+*{
+	margin: 10px;
+}
+
+@font-face {
+	font-family: alexbrush;
+	src: url(alexbrush.woff);
+}
+
+#pad{
+	font-family: alexbrush;
+	font-size: 1.3em;
+	font-variant: small-caps;
+	width: 1000px;
+	height: 200px;
+	padding: 35px;
+	background-color: rgb(239,59,36);
+	color: #007ac1;
+	text-transform: capitalize;
+	text-indent: 15px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	box-sizing: border-box;
+	box-shadow: 15px 15px 10px purple;
+	overflow: hidden;
+	border-radius: 25px;
+
+}
+
+#marg{
+	font-family: "Roboto Mono Medium";
+	font-weight: bolder;
+	font-size: x-large;
+	height: 200px;
+	margin: 60px;
+	background-color: salmon;
+	color: hsl(100,68%,54%);
+	text-transform: capitalize;
+	line-height: 40px;
+	text-shadow: 2px 3px 5px seagreen;
+	overflow: auto;
+	opacity: 80%;
+	border-top-left-radius: 25px;
+}
+
+h1{text-align: left;}
+h2{text-align: center;}
+h3{text-align: right;}

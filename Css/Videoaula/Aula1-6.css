@@ -1,0 +1,40 @@
+/*Aulas 2,3,4,5,6 */
+*{
+	margin: 10px;
+	padding: 0;
+}
+
+h1{
+	color:blue;
+	font-size:100px;
+	font:bolder
+}
+
+input{
+	width: 200px;
+	background-color: grey;
+}
+
+input[type="submit"]{
+	width: 200px;
+	background-color: red;
+	cursor: pointer;
+}
+
+p, h2{
+	text-align: center;
+	background-color: red;
+	border: 5px solid black;
+	width: 500px;
+}
+
+.diferente{
+	text-align: end;
+	background-color: purple;
+	border: 3px dotted teal;
+	width: 750px;
+}
+
+#parecido{
+	border: 5px solid darkblue;
+}

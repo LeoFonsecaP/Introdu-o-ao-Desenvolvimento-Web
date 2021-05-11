@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<title>Sétima página</title>
+		<meta charset="utf-8">
+		<style>
+			h1 {margin-left: 45%;}
+			table {margin-left: 38%;}
+			table, th, td {border: 3px solid #000;}
+			table, th, td {border-collapse: collapse;}
+			th, td {padding: 12px;}
+			table {color: white;}
+			.Animal {background-color: darkblue;}
+			.Nota {background-color: rebeccapurple;}
+			.Ter {background-color: purple;}
+			tfoot {background-color: black;}
+
+		</style>
+    </head>
+
+    <body>
+		<h1>Tabelas:</h1>
+
+		<table>
+			<caption>Animais</caption>
+
+			<colgroup>
+			<col class="Animal">
+			<col class="Nota">
+			<col class="Ter">
+			</colgroup>
+			
+			<tr>
+				<th>Animal</th>
+				<th>Nota (de 10)</th>
+				<th>Gostaria de ter?</th>
+			</tr>
+			<tr>
+				<td>Camelo</td>
+				<td>10</td>
+				<td>Sim!</td>
+			</tr>
+			<tr>
+				<td>Touro</td>
+				<td>7</td>
+				<td>Não!</td>
+			</tr>
+			<tr>
+				<td>Leão</td>
+				<td>9</td>
+				<td>Sim!</td>
+			</tr>
+			<tr>
+				<td>Peixe</td>
+				<td>100</td>
+				<td>Sim!</td>
+			</tr>
+			<tfoot>
+				<td colspan="3">Total: 3</td>
+			</tfoot>
+		</table>
+    </body>
+</html>

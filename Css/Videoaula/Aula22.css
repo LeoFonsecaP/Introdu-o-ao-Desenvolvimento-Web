@@ -1,0 +1,10 @@
+
+body{
+	background: url(img.jpg) center center/100% 100% no-repeat fixed;
+}
+#pad{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	width: 1000px;
+	padding: 35px;
+	color: white;
+}
