@@ -1,0 +1,41 @@
+body{
+	background-color: lightgrey;
+}
+
+
+#CaixaDeCores{
+	width: 450px;
+	height: 450px;
+	margin: 70px auto
+}
+
+#HexNome{
+	width: 50%;
+	text-align: end;
+}
+
+#Square{
+	margin: auto;
+	margin-bottom: 20px;
+	width: 70%;
+	height: 70%;
+	background-color: red;
+}
+
+form{
+	text-align: center;
+}
+
+#Cor{
+	width: 20%;
+	padding: 5px;
+}
+
+button{
+	padding: 5px;
+	background-color: darkgoldenrod;
+}
+
+#Cor, #CaixaDeCores, #Square, button{
+	border: 2px solid black;
+}
