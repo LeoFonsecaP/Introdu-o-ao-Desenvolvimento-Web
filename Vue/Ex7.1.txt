@@ -1,0 +1,1 @@
+	Two-way binding significa que quando o valor do dado é atualizado na UI, o modelo também é atualizado e vice-versa. Em vue, ela funciona através de tags v-model.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <form id="app" class="container-fluid" @submit="checkForm">
+      <h1>Vue.js Form</h1>
+	  <p v-if="errors.length">
+		<b style="color: red;">Por favor corrija o(s) seguinte(s) erro(s):</b>
+		<ul>
+		  <li v-for="error in errors" style="color: red;">{{ error }}</li>
+		</ul>
+	  </p>
+      <div class="form-container" >
+        <div class="form-row">
+          <div class="form-group col-6">
+            <input type="text" class="form-control"
+                   placeholder="Primeiro Nome" v-model="name">
+          </div>
+          <div class="form-group col-6">
+            <input type="text" class="form-control" placeholder="Sobrenome" v-model="lastnames">
+          </div>
+          <div class="form-group col-12">
+            <input type="date" class="form-control"
+                   placeholder="Data de Nascimento" v-model="bornin" name="begin" 
+				   placeholder="dd-mm-yyyy" value=""
+				   max="2020-12-31">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" placeholder="Cidade" v-model="city">
+          </div>
+          <div class="form-group col-md-4">
+            <select id="state" class="form-control" v-model="zodiac">
+              <option selected>Signo</option>
+              <option>Áries</option>
+              <option>Leão</option>
+              <option>...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-12">
+        </div>
+        <button type="submit" value="Submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="Ex7.3.js"></script>
+  </body>
+</html>

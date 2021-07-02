@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js Search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="app" class="container-fluid">
+      <h1>Vue.js Search</h1>
+      
+      <div class="form-group">
+        <input type="text" class="form-control"
+               placeholder="Search term" v-model = "search">
+      </div>
+      
+      <div class="result-container">
+        <h2>Results<span></span></h2>
+        <ul class="list-group">
+          <li class="list-group-item" v-for= "item in FilteredItems"> {{item.title}}</li>
+        </ul>
+      </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="Ex7.2.js"></script>
+  </body>
+</html>
